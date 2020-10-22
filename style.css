@@ -1,0 +1,106 @@
+
+body{
+	font-family: 'Orbitron', sans-serif;
+	background:
+		linear-gradient(324deg, #232927 4%,   transparent 4%) -70px 43px,
+		linear-gradient( 36deg, #232927 4%,   transparent 4%) 30px 43px,
+		linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 30px 43px,
+		linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -70px 43px,
+		linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -70px 23px,
+		linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 30px 23px,
+
+		linear-gradient(324deg, #232927 4%,   transparent 4%) -20px 93px,
+		linear-gradient( 36deg, #232927 4%,   transparent 4%) 80px 93px,
+		linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 80px 93px,
+		linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -20px 93px,
+		linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
+		linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
+	background-color: #232927;
+	background-size: 100px 100px;
+}
+
+header {
+	font-size: 3rem;
+	color:  yellow;
+	text-align: center;
+	text-shadow: 3px 3px 0px rgb(198, 88, 194);
+	height: 6rem;
+	line-height: 6rem;
+}
+
+.main-container {
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	background: rgb(249, 232, 1);
+	border-radius: 10px;
+	border:5px solid rgb(249, 232, 1);
+	margin-left: 10px;
+}
+
+.card-container {
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: center;
+	margin: 20px;
+	margin-top: 50px;
+	border: 10px solid #232927;
+	border-radius: 30px;
+	background: linear-gradient(to right, rgb(18, 222, 218), rgb(188, 56, 171));
+}
+
+.input-bar {
+	align-self: center;
+	display: flex;
+	/*flex-flow: row nowrap; default */
+	align-items: center;
+	align-content: center;
+	padding: 30px;
+	margin: 30px;
+	border-radius: 10px;
+	background:
+linear-gradient(324deg, #232927 4%,   transparent 4%) -70px 43px,
+linear-gradient( 36deg, #232927 4%,   transparent 4%) 30px 43px,
+linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 30px 43px,
+linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -70px 43px,
+linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -70px 23px,
+linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 30px 23px,
+
+linear-gradient(324deg, #232927 4%,   transparent 4%) -20px 93px,
+linear-gradient( 36deg, #232927 4%,   transparent 4%) 80px 93px,
+linear-gradient( 72deg, #e3d7bf 8.5%, transparent 8.5%) 80px 93px,
+linear-gradient(288deg, #e3d7bf 8.5%, transparent 8.5%) -20px 93px,
+linear-gradient(216deg, #e3d7bf 7.5%, transparent 7.5%) -20px 73px,
+linear-gradient(144deg, #e3d7bf 7.5%, transparent 7.5%) 80px 73px;
+background-color: #232927;
+background-size: 100px 100px;
+}
+
+.card-block {
+	margin: 30px;
+}
+
+ul {
+	display: flex;
+	flex-flow: column nowrap;
+	list-style: none;
+	padding-left: 30px;
+}
+
+.list-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin: 5px 0px;
+}
+
+label.done-toggle {
+	text-decoration: line-through;
+	color: yellow;
+	font-style: italic;
+}
