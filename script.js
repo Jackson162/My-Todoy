@@ -58,6 +58,7 @@ resumeToToDo = (event) => {
 	if (doneTask && doneTask.tagName === "LABEL") { 
 		
 	let newItem = document.createElement("li"); 
+	newItem.setAttribute("class", "list-container")
 	newItem.innerHTML = 
 	   `<label for="todo">${doneTask.innerText}</label>
 	    <button class="delete">delete</button>`
