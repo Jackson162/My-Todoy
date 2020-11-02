@@ -7,7 +7,7 @@ let doneList = document.getElementById("done");
 
 
 // Create list
-const inputLength = () => input.value.length;
+const validInput = () => input.value.trim();
 
 
 const createListToToDo = () => {
@@ -21,15 +21,21 @@ const createListToToDo = () => {
 }
 
 const addListAfterKeydown = (event) => {
-	if (inputLength() > 0 && event.keyCode === 13) {
+	if (validInput() !== "" && event.keyCode === 13) {
 		createListToToDo();
-	} 
+	} else if (validInput() === "" && event.keyCode === 13) {
+		alert("invalid input!! Please input some words.");
+		input.value = "";
+	}
 }
 
 const addListAfterClick = () => {
-	if (inputLength() > 0) {
+	if (validInput() !== "") {
 		createListToToDo();
-	} 
+	} else {
+		alert("invalid input!! Please input some words.");
+		input.value = "";
+	}
 }
 
 input.addEventListener("keypress", addListAfterKeydown);
