@@ -53,6 +53,7 @@ moveToDone = (event) => {
     doneList.appendChild(doneItem); //relocation
 
     finishedTask.parentElement.remove(); //deletion
+ 	
 	}	
 }
 
